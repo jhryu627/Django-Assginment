@@ -45,10 +45,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>User List</h1>
+        <h1>Todo List</h1>
         <ul>
-            {% for user in data %}
-                <li><a href="{% url 'user_info' user.id %}">{{ user.name }}</a></li>
+            {% for todo in data %}
+                <li><a href="{% url 'todo_info' todo.id %}">{{ todo.title }}</a></li>
             {% endfor %}
         </ul>
     </div>
